@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Face Recognition</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://teachablemachine.withgoogle.com/models/iedahd0Gs/"></script>
+        <script src="https://teachablemachine.withgoogle.com/models/8noOvW_Nu/"></script>
+
+    </head>
+
+    <body>
+        <div class="container">
+        <center>
+            <h1>Face Recognition</h1>
+            <h3>Model is trained to identify the following people</h3>
+            
+            <br>
+            <b>
+                <h5>Arjun</h5>
+                <hr>
+                <h5>Adwait</h5>
+                <hr>
+                <h5>Kanchan</h5>
+                <hr>
+                <h5>Sachin</h5>
+                <hr>
+                <h5>Subodh</h5>
+                <hr>
+                <h5>Jyoti</h5>
+                <hr>
+                <h5>Ananya</h5>
+                <hr>
+                <h5>Harishchandra</h5>
+                <hr>
+                <h5>Kunda</h5>
+                <hr>
+            </b>
+
+            <div id="camera"></div>
+            <div id="result"></div>
+            <button class="btn btn-success" onclick="take_snapshot()" >Capture Image</button>
+            <button class="btn btn-info" onclick="result()" >Show Result</button>
+
+            <br>
+            <br>
+
+            <p style="font-size: 22px;" id="person"></p>
+        </center>
+        </div>
+    </body>
+     
+    <script src="main.js"></script>
+</html>
